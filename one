@@ -1,0 +1,38 @@
+create table AlertActionConfig (
+	rowid INTEGER,
+	text TEXT,
+	value TEXT,
+	key TEXT,
+);
+
+create table AlertAction (
+	rowid INTEGER,
+	text TEXT,
+	className TEXT,
+	id INTEGER,
+);
+
+create table AlertCondition (
+	rowid INTEGER,
+	text TEXT,
+	logMatches TEXT,
+	recoverId INTEGER,
+	baselinePercentage TEXT,
+	logLevel TEXT,
+	required TEXT,
+	baselineMetric TEXT,
+	baselineComparator TEXT,
+	baselineType TEXT,
+	thresholdComparator TEXT,
+	recover TEXT,
+	type TEXT,
+	thresholdMetric TEXT,
+	thresholdValue TEXT,
+);
+
+create table Resource (
+	rowid INTEGER,
+	text TEXT,
+	id INTEGER,
+);
+
